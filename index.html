@@ -1,0 +1,111 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<title>Image Comparison</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+	  <div class="container">
+	    <div class="page-header"> <h1>Simple Image Comparison</h1>
+	     <h5>Add your images to compare them.</h5>
+	  </div>
+
+	  <div class="row">
+	  <div class="col-sm-3 col-md-6">
+	  <div class="form-group">
+	  <label for="f-url">Enter address of first image:</label>
+	  <input type="url" class="form-control" id="url-one" placeholder="Paste image URL here">
+	  <button type="button" class="btn btn-primary" id="button-1"><span class="glyphicon glyphicon-camera"></span> Import Image</button>
+	  </div>
+	  </div>
+
+	<div class="col-sm-3 col-md-6">
+	<div class="form-group">
+	  <label for="s-url">Enter address of second image:</label>
+	  <input type="url" class="form-control" id="url-two" placeholder="Paste image URL here">
+	  <button type="button" class="btn btn-primary" id="button-2"><span class="glyphicon glyphicon-camera"></span> Import Image</button>
+	</div>
+	</div>
+	  </div>
+
+
+	 <div class="row">
+	  <div class="col-sm-3 col-md-6">
+	  <div class="img">
+	    <img id="image-container-one"/>
+	    
+	  </div>
+	  </div>
+
+
+	  <div class="col-sm-3 col-md-6">
+	  <div class="img">
+	    <img id="image-container-two"/>
+	    
+	  </div>
+	 </div>
+
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	                                 <div class="col-offset-4 col-md-6 col-xs-6">
+									<div class="btn-group buttons" style="display:none" id="s-button">
+										<button class="btn btn-sm active" id="raw">Ignore nothing</button>
+										<button class="btn btn-sm" id="colors">Ignore colors</button>
+										<button class="btn btn-sm" id="antialising">Ignore antialiasing</button>
+										
+									</div>
+									</div>
+									<br/>
+	                                 <div class="img">
+	                                 <img id="diff-image"/>
+	    
+	                                  </div>
+
+  									<div id="diff-results" style="display:none">
+									<p>
+										<strong>The second image is <span id="mismatch"></span>% different compared to the first.
+										<span id="differentdimensions" style="display:none">And they have different dimensions.</span></strong>
+									</p>
+									<p>
+										Use the buttons above to change the comparison algorithm. 
+									</p>
+								</div>
+
+									</div>
+
+
+									<br/>
+									<br/>
+	                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="footer">
+					<p><center>	
+						Created using <a href="http://huddle.github.io/Resemble.js/" target="_blank">Resemble.js</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.
+					</p></center>
+					
+				</footer>
+
+
+	</div>
+	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="scripts/resemble.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+	</html>
